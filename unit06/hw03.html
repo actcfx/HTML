@@ -1,0 +1,80 @@
+<!--6-3-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>乙班06王瑋祥6-3</title>
+	</head>
+
+	<body>
+    <div class="container-fluid">
+			<div class="row mt-2">
+				<div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+					<div class="card">
+						<div class="card-header bg-info text-white text-center">
+							<h4>基本資料</h4>
+						</div>
+						<div class="card-body">
+							<form action="hw03.php" method="post">
+								<div class="form-group">
+									<label for="userid">帳號：</label>
+									<input type="text" class="form-control" id="userid" name="userid" placeholder="您的帳號" required>
+								</div>
+								<div class="form-group">
+									<label for="userpw">密碼：</label>
+									<input type="password" class="form-control" id="userpw" name="userpw" placeholder="您的密碼" required>
+								</div>
+                                <div class="form-group">
+                                性別：
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="usergender" value="male" required>男&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="usergender" value="female" required>女&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="usergender" value="private" required>不公開
+                                    </label>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                喜歡的科目：
+                                <div class="form-check">
+                                    <input type="checkbox" name="favorite[]" value="chinese">國文<br>
+                                    <input type="checkbox" name="favorite[]" value="english">英文<br>
+                                    <input type="checkbox" name="favorite[]" value="math">數學<br>
+                                    <input type="checkbox" name="favorite[]" value="electronics">電子學<br>
+                                    <input type="checkbox" name="favorite[]" value="programming">程式設計<br>
+                                </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="dislike">最不喜歡的科目：</label>
+                                    <select class="form-control" id="dislike" name="dislike">
+                                        <option value="" selected disabled hidden>請選擇科目</option>
+                                        <option value="chinese">國文</option>
+                                        <option value="english">英文</option>
+                                        <option value="math">數學</option>
+                                        <option value="electronics">電子學</option>
+                                        <option value="programming">程式設計</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date1">出生日期：</label>
+                                    <input type="date" class="form-control" id="date1" name="date1" required>
+                                </div>
+								<button class="btn btn-secondary" type="submit">提交</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

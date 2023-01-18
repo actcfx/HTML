@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <title>乙班06王瑋祥10-1</title>
+        <script>
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+            $("#panel").click(function(){
+                $("#panel").slideUp("slow");
+            });
+            $('#picture').click(function(){
+                $('#picture').animate({
+                    width: '500',
+                });
+            });
+        });
+        </script>
+        <style>
+            #show, #panel { background-color: rgb(207, 216, 255);
+                        padding: 5px;
+                        border: solid 1px #c3c3ce;
+                    }
+            #show 	{ text-align: center; }
+            #panel	{ display: none; }
+        </style>
+        <style>
+            h1 {text-align: center; color: rgb(0, 81, 255);}
+            p {text-align: center; color: rgb(0, 0, 0); font-size: 16px; border: 1px dashed rgb(0, 81, 255); background-color: white}
+            #p2 {text-align: left; color: rgb(0, 0, 0); font-size: 10pt; border: 0px}
+            a:link {color:green; font-weight: bolder; text-decoration: none;}
+            a:visited {color:gray; font-weight: bolder; text-decoration: none;}
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card">
+                        <div class="card-header bg-info text-white text-center">
+                            <h4>自我介紹</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="text-center">
+                                <img src="bocchi.jpg" width="200" id="picture">
+                            </h5>
+                            <div id="show">按我</div>
+                            <div id="panel">
+                                <p>我叫王瑋祥，別名瑞芳王家少主地頭蛇暨耶教貓頭鷹兼專題及伺服器金主江湖人送外號耶爺，國小就讀<a href="https://www.rfes.ntpc.edu.tw/">瑞芳國小</a>，國中就讀私立的<a href="https://www.essh.kl.edu.tw/">二信中學</a>，高中因為興趣選擇了<a href="https://www.taivs.tp.edu.tw/">大安高工</a>資訊科。</p>
+                                <p>個性比較偏孤僻，平時喜歡一個人獨處，也有輕微的社恐，平時喜歡看動畫、漫畫、小說之類的，偶爾也會打打遊戲。</p>
+                                <p>升上高中以後，交到了不少朋友，漸漸變得不那麼孤僻，也慢慢開始學習程式語言，發現自己的興趣所在，未來會繼續在資工這條路上走下去的，也希望可以交到更多朋友。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

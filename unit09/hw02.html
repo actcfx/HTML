@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <title>乙班06王瑋祥9-2</title>
+        <script>
+            var a=0;
+            function change() {
+                if (a == 0){
+                    document.body.style.backgroundColor="lightblue";
+                    document.getElementById("button").innerHTML = "回復原始背景顏色";
+                    a = 1;
+                }
+                else {
+                    document.body.style.backgroundColor="white";
+                    document.getElementById("button").innerHTML = "按我可以改變網頁的背景色";
+                    a = 0;
+                }
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <button id="button" class="btn btn-primary" onclick="change()">按我可以改變網頁的背景色</button>
+        </div>
+    </body>
+</html>
